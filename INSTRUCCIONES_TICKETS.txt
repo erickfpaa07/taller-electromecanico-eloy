@@ -1,0 +1,23 @@
+TALLER ELECTROMECÁNICO PARRA - TICKETS TÉRMICOS
+
+Esta actualización incluye el sistema completo anterior y agrega ticket.php.
+No necesita ejecutar ninguna migración SQL adicional.
+
+INSTALACIÓN
+1. Haga copia de seguridad de C:\xampp\htdocs\taller_parra y exporte la BD taller_parra desde phpMyAdmin.
+2. Extraiga el ZIP. Copie el CONTENIDO de la carpeta taller_parra a C:\xampp\htdocs\taller_parra.
+3. Mantenga su config/database.php actual si cambió las credenciales.
+4. NO importe database.sql, migracion_v2.sql ni migracion_v3.sql si ya instaló la versión anterior.
+5. Abra http://localhost/taller_parra/cotizador.php.
+6. Capture una cotización y pulse "Guardar e imprimir ticket".
+7. En el ticket elija 80 mm o 58 mm según su impresora y pulse "Imprimir ticket".
+8. En el diálogo del navegador elija la impresora térmica instalada, ancho correcto, márgenes "Ninguno", escala 100%, sin encabezados ni pies de página.
+9. Desde el historial puede reimprimir cualquier cotización.
+
+IMPORTANTE
+- La impresora debe estar instalada en Windows y configurada con el ancho de papel correspondiente.
+- El navegador muestra el diálogo de impresión: la impresión silenciosa directa requiere configuración especial del equipo/kiosco.
+- Si el driver no admite altura automática, seleccione el tamaño de papel rollo apropiado en las propiedades de la impresora.
+- El ticket es una cotización simple, no una factura fiscal/CFDI.
+- No muestra costos internos, márgenes ni tarifa por hora.
+- El ticket imprime únicamente cliente (si existe), marca, modelo, servicio y precio total.

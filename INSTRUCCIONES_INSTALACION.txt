@@ -1,0 +1,13 @@
+TALLER ELECTROMECÁNICO PARRA — SISTEMA INTEGRADO CON COTIZADOR
+
+SI YA TIENES EL SISTEMA FUNCIONANDO:
+1. En phpMyAdmin, selecciona taller_parra > Exportar y guarda un respaldo.
+2. Si todavía NO importaste migracion_v2.sql, impórtalo primero. Si ya lo hiciste, NO repitas la importación.
+3. Si todavía NO importaste migracion_v3.sql, impórtalo en taller_parra. La migración crea la tabla cotizaciones si no existe.
+4. Copia los archivos de esta carpeta taller_parra a C:\xampp\htdocs\taller_parra, reemplazando los anteriores. NO borres tu carpeta actual ni la base de datos.
+5. Si cambiaste los datos de conexión, conserva tu config/database.php anterior.
+6. Abre http://localhost/taller_parra/ y selecciona Cotizador.
+
+El cotizador propone tiempos de referencia, NO mediciones reales: alternador 2h, marcha 2h, cableado 3h, diagnóstico 1h. Tarifa inicial $175/h basada en supuestos acordados; ajustable en el formulario. El precio al cliente es un total único.
+
+IMPORTANTE: Para acceso público por Internet faltan inicio de sesión, protección de datos y seguridad adicional.

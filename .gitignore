@@ -1,0 +1,16 @@
+
+# Credenciales de la base de datos
+/config/database.php
+.env
+.env.*
+
+# Datos privados y respaldos
+/uploads/
+/backups/
+*.sql
+*.zip
+
+# Archivos temporales
+*.log
+*.tmp
+Thumbs.db

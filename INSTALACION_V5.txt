@@ -1,0 +1,21 @@
+TALLER ELECTROMECÁNICO PARRA - V5
+
+NOVEDADES
+- Ganancias y gastos: registro de gastos, cobros parciales y resumen mensual.
+- WhatsApp: enlace desde cotizaciones con teléfono de cliente; abre WhatsApp con mensaje prellenado (NO se envía automáticamente).
+- Garantía: días y condiciones en cada cotización, visibles en ticket térmico.
+- Conserva cotizador, tickets 58/80 mm y vehículos con solo marca y modelo en formularios.
+
+INSTALACIÓN EN XAMPP
+1. RESPALDA tu base de datos taller_parra desde phpMyAdmin (Exportar) y tu carpeta C:\xampp\htdocs\taller_parra.
+2. Descomprime y copia los archivos de la carpeta taller_parra a C:\xampp\htdocs\taller_parra.
+3. Conserva config/database.php si personalizaste la conexión.
+4. Si tienes V4 instalada, importa SOLAMENTE migracion_v5.sql en phpMyAdmin, seleccionando taller_parra. Si instalas desde cero: database.sql, migracion_v2.sql, migracion_v3.sql y migracion_v5.sql, en ese orden.
+5. Abre http://localhost/taller_parra/finanzas.php y prueba una cotización con garantía.
+
+IMPORTANTE
+- El ticket es una cotización, NO factura fiscal.
+- La garantía comienza desde la entrega del trabajo, no necesariamente desde la fecha de cotización.
+- No dupliques costos: si registras refacciones en cotización, no las vuelvas a ingresar como gasto para el mismo análisis.
+- WhatsApp requiere un teléfono del cliente; el usuario confirma el envío manualmente.
+- La ganancia es una estimación, no utilidad contable ni cálculo fiscal. No se descuentan retiros personales ni impuestos.

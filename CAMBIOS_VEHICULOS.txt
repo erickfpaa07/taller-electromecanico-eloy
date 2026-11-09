@@ -1,0 +1,1 @@
+Registro simplificado: solo propietario, marca y modelo. No solicita año, placas ni VIN. No requiere migracion SQL y conserva registros anteriores.

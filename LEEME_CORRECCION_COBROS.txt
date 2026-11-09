@@ -1,0 +1,11 @@
+TALLER PARRA - CORRECCION DE GANANCIAS Y COBROS
+
+1. Respaldar la carpeta C:\xampp\htdocs\taller_parra y exportar la base taller_parra desde phpMyAdmin.
+2. Copiar el contenido de esta carpeta taller_parra encima de C:\xampp\htdocs\taller_parra (sin crear una carpeta doble).
+3. Abrir http://localhost/taller_parra/finanzas.php
+4. Si se muestra el aviso de tablas faltantes, importar migracion_v5.sql desde phpMyAdmin en la base taller_parra.
+5. Si la tabla cotizaciones falta, importar primero migracion_v3.sql. No importar de nuevo database.sql.
+6. Volver a abrir http://localhost/taller_parra/cotizador.php y usar Registrar cobro.
+
+Esta correccion cambia la consulta de cobros para evitar problemas con configuraciones SQL GROUP BY y agrega diagnostico cuando faltan tablas. No elimina ni reinicia datos.
+Si sigue fallando, enviar captura o mensaje exacto del error.
