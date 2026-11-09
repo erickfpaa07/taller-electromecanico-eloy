@@ -90,4 +90,4 @@ Entre las mejoras pendientes se encuentran la implementación de autenticación 
 
 ## Autor
 
-Proyecto desarrollado como parte de la aplicación práctica de conocimientos de Ingeniería en Sistemas, enfocado en el desarrollo web y la administración de bases de datos.
+Erick Parra
